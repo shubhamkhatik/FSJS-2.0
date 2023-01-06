@@ -1,0 +1,81 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+}
+.container {
+  padding: 60px 60px 60px 100px;
+}
+/* ============= nabvar================= */
+.navbar-container {
+  
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr;
+}
+.list {
+  display: flex;
+  column-gap: 30px;
+}
+.list-item {
+  list-style-type: none;
+  color: #9d9898;
+}
+nav > div > img {
+  height: 30px;
+  width: 90px;
+}
+.grow-list .list > :first-child {
+  color: black;
+  font-weight: bold;
+}
+/* .button-group{
+  
+} */
+.nav-button {
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+  background-color: #382aaad4;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+/* ==========banner ================================= */
+.banner-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 40px 0;
+}
+
+
+img[alt="illustration"] {
+  width: 100%;
+}
+.heading-text {
+  font-size: 60px;
+  margin: 30px 0;
+
+  color: #1a1462;
+}
+span {
+  color: #5f61d1;
+}
+.description {
+  color: #758283;
+  width: 90%;
+
+}
+button.nav-button.btn {
+  margin-top: 50px;
+  border-radius: 7px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #4f52f1;
+  color: #fff;
+}
