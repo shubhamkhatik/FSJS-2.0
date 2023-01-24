@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>vs code clone</title>
+    <link
+      rel="shortcut icon"
+      href="./Assets/img/vsCodeLogo.png"
+      type="image/png"
+      class="unnamed"
+    />
+    <!-- TailWind -->
+    <!-- Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/671f91a167.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-zinc-800 flex flex-col items-center sticky top-0 z-10">
+      <section
+        class="transition-all duration-500 group bg-zinc-800 px-0 m-0 flex justify-around flex-col lg:flex-row w-full lg:2-3/4 xl:w-[80%]"
+      >
+        <section class="flex-col flex lg:flex-row lg:items-center relative">
+          <div class="px-3 py-2.5 flex gap-2 items-center">
+            <img
+              class="h-[2rem] cursor-pointer"
+              src="./Asset/vscode.png"
+              alt="vs code logo"
+            />
+            <p
+              class="text-xl md:text-lg xl:text-xl text-white cursor-pointer hover:text-yellow-300"
+            >
+              Visual Studio Code
+            </p>
+          </div>
+          <nav
+            class="absolute top-10 inset-x-0 grow hidden transition-all duration-500 group-hover:flex lg:flex lg:static bg-zinc-800"
+          >
+            <ul
+              class="w-full text-white flex flex-col items-stretch lg:flex-row lg:items-center lg:grow"
+            >
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300"
+              >
+                Docs
+              </li>
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300"
+              >
+                Updates
+              </li>
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300"
+              >
+                API
+              </li>
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300"
+              >
+                Blog
+              </li>
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300"
+              >
+                Extensions
+              </li>
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300"
+              >
+                FAQ
+              </li>
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300"
+              >
+                Learn
+              </li>
+              <li
+                class="p-3 lg:p-2.5 cursor-pointer text-slate-400 hover:text-yellow-300 lg:hidden"
+              >
+                Search
+              </li>
+              <button
+                class="text-left lg:hidden border-none px-4 py-3 text-white m-0 font-semibold bg-blue-500 hover:bg-blue-600 cursor-pointer"
+              >
+                <i class="px-2 fa-solid fa-download"></i>Download
+              </button>
+            </ul>
+          </nav>
+          <div
+            class="absolute top-3 right-0 lg:hidden text-white text-2xl mx-4"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </section>
+
+        <section class="flex">
+          <!-- search bar  -->
+          <div
+            class="hidden lg:flex text-white bg-zinc-600 hover:bg-zinc-700 flex items-center justify-between gap-px"
+          >
+            <span class="mx-2 hidden lg:flex py-3"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              class="font-semibold hidden h-full xl:flex lg:w-20 xl:w-36 bg-transparent text-sm text-white outline-none py-3"
+              placeholder="Search Docs..."
+              type="search"
+            />
+          </div>
+          <!-- download btn  -->
+          <div class="cursor-pointer hidden lg:flex">
+            <button
+              class="border-none px-3 py-3 text-white m-0 font-semibold bg-blue-500 hover:bg-blue-600 flex gap-1"
+            >
+              <div class="text-white"><i class="fa-solid fa-download"></i></div>
+              Download
+            </button>
+          </div>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <!-- Notice and Disclaimer  -->
+      <section class="bg-zinc-900 p-2 w-full flex justify-center z-10">
+        <marquee class="text-white w-full hover:text-yellow-400 font-semibold "
+          >Education purpose only ** ** <span class="text-orange-400 	text-transform: uppercase">It's part of assignment of JS bootcamp by ineuron  [pw skills]</span> ** **
+          Education purpose only
+        </marquee>
+      </section>
+    </main>
+  </body>
+</html>
