@@ -8,7 +8,7 @@
     <title>vs code clone</title>
     <link
       rel="shortcut icon"
-      href="./Assets/img/vsCodeLogo.png"
+      href="./Assets/vscodelogo.png"
       type="image/png"
       class="unnamed"
     />
@@ -25,6 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome script   -->
     <script
       src="https://kit.fontawesome.com/671f91a167.js"
       crossorigin="anonymous"
@@ -40,7 +41,7 @@
           <div class="px-3 py-2.5 flex gap-2 items-center">
             <img
               class="h-[2rem] cursor-pointer"
-              src="./Asset/vscode.png"
+              src="./Asset/vscodelogo.png"
               alt="vs code logo"
             />
             <p
@@ -137,12 +138,428 @@
     </header>
 
     <main>
-      <!-- Notice and Disclaimer  -->
-      <section class="bg-zinc-900 p-2 w-full flex justify-center z-10">
-        <marquee class="text-white w-full hover:text-yellow-400 font-semibold "
-          >Education purpose only ** ** <span class="text-orange-400 	text-transform: uppercase">It's part of assignment of JS bootcamp by ineuron  [pw skills]</span> ** **
-          Education purpose only
+      <!-- warning    -->
+      <section class="bg-zinc-500 sticky p-2 w-full flex justify-center z-10">
+        <marquee class="text-white w-full hover:text-yellow-400 font-semibold"
+          >Education purpose only ** **
+          <span class="text-orange-400 text-transform: uppercase"
+            >It's part of assignment of JS bootcamp by ineuron [pw skills]</span
+          >
+          ** ** Education purpose only
         </marquee>
+      </section>
+      <!--  banner with vs code image -->
+      <section class="bg-zinc-800 flex justify-center items-center z-10">
+        <section
+          class="my-8 mx-4 text-white flex flex-col lg:flex-row lg:items-start lg:justify-between w-full lg:w-3/4"
+        >
+          <div class="m-4 text-center flex flex-col items-center basis-2/6">
+            <p class="text-5xl w-full font-light mb-2">
+              Code editing. <br /><span class="font-normal">Redefined.</span>
+            </p>
+            <p class="text-lg w-full font-medium text-slate-400">
+              Free. Built on Open Source. Runs everywhere.
+            </p>
+            <div class="lg:w-5/6 py-5">
+              <!-- Download Button  -->
+              <div class="mb-3 w-full flex gap-[2px]">
+                <button
+                  class="w-[90%] py-2 bg-blue-500 hover:bg-blue-600 text-lg font-semibold rounded-sm"
+                >
+                  Download for Windows <br />
+                  <p class="text-sm font-normal">Stable Build</p>
+                </button>
+                <div
+                  class="cursor-pointer text-white bg-blue-500 hover:bg-blue-600 w-[10%] text-center flex items-center justify-center rounded-sm"
+                >
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p class="py-2 bg-zinc-900 rounded-lg text-sm">
+                  <span
+                    class="cursor-pointer text-blue-400 hover:text-blue-600 hover:underline"
+                    >Web</span
+                  >,
+                  <span
+                    class="cursor-pointer text-blue-400 hover:text-blue-600 hover:underline"
+                    >Insiders edition</span
+                  >, or
+                  <span
+                    class="cursor-pointer text-blue-400 hover:text-blue-600 hover:underline"
+                    >other platforms</span
+                  >
+                </p>
+              </div>
+              <p class="text-xs mb-3 w-full p-1">
+                By using VS Code, you agree to its<br />
+                <span
+                  class="cursor-pointer text-blue-400 hover:text-blue-600 hover:underline"
+                  >license and privacy statement.</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="basis-4/6 object-contain p-3">
+            <img src="./Asset/vscode.png" alt="Banner Image" />
+          </div>
+        </section>
+      </section>
+      <!-- warning  -->
+      <section class="bg-zinc-500 sticky p-2 w-full flex justify-center z-10">
+        <marquee
+          class="text-white w-full hover:text-yellow-400 font-semibold"
+          direction="right"
+          >Education purpose only ** **
+          <span class="text-orange-400 text-transform: uppercase"
+            >It's part of assignment of JS bootcamp by ineuron [pw skills]</span
+          >
+          ** ** Education purpose only
+        </marquee>
+      </section>
+      <!-- four icons  -->
+      <section class="bg-white flex justify-center items-center z-10">
+        <section
+          class="flex flex-wrap items-center justify-center w-full lg:w-3/4"
+        >
+          <div
+            class="group w-1/2 lg:w-1/4 flex flex-col justify-center items-center gap-1 px-3 py-3 cursor-pointer hover:bg-slate-200 rounded-sm"
+          >
+            <p
+              class="group-hover:text-blue-600 lg:text-[3rem] md:text-[4rem] text-[3rem] w-full text-center"
+            >
+              <i class="fa-solid fa-lightbulb"></i>
+            </p>
+            <p
+              class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal cursor-pointer"
+            >
+              IntelliSense
+            </p>
+          </div>
+          <div
+            class="group w-1/2 lg:w-1/4 flex flex-col justify-center items-center gap-1 px-3 py-3 cursor-pointer hover:bg-slate-200 rounded-sm"
+          >
+            <p
+              class="group-hover:text-green-600 lg:text-[3rem] md:text-[4rem] text-[3rem] w-full text-center"
+            >
+              <i class="fa-solid fa-play"></i>
+            </p>
+            <p
+              class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal cursor-pointer"
+            >
+              Run and Debug
+            </p>
+          </div>
+          <div
+            class="group w-1/2 lg:w-1/4 flex flex-col justify-center items-center gap-1 px-3 py-3 cursor-pointer hover:bg-slate-200 rounded-sm"
+          >
+            <p
+              class="group-hover:text-red-600 lg:text-[3rem] md:text-[4rem] text-[3rem] w-full text-center"
+            >
+              <i class="fa-solid fa-code-branch"></i>
+            </p>
+            <p
+              class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal cursor-pointer"
+            >
+              Built-in Git
+            </p>
+          </div>
+          <div
+            class="group w-1/2 lg:w-1/4 flex flex-col justify-center items-center gap-1 px-3 py-3 cursor-pointer hover:bg-slate-200 rounded-sm"
+          >
+            <p
+              class="group-hover:text-purple-500 lg:text-[3rem] md:text-[4rem] text-[3rem] w-full text-center"
+            >
+              <i class="fa-brands fa-windows"></i>
+            </p>
+            <p
+              class="text-base md:text-lg lg:text-xl font-semibold lg:font-normal cursor-pointer"
+            >
+              Extensions
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- carousel section start -->
+
+      <section class="bg-slate-100 flex justify-center items-center z-10">
+        <section
+          class="relative flex flex-col gap-2 lg:gap-0 px-3 lg:p-0 lg:flex-row flex-wrap items-center justify-between my-12 w-full lg:w-[80%]"
+        >
+          <!--  left arrow -->
+          <div
+            class="text-zinc-500 hover:text-zinc-700 rounded-full hidden cursor-pointer hover:shadow-2xl text-6xl lg:absolute lg:-left-8 lg:flex lg:items-center"
+          >
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </div>
+          <!-- First carousel div  -->
+          <div
+            class="group flex space-x-4 items-center gap-2 lg:items-start p-2 lg:m-0 lg:gap-0 lg:my-2 lg:w-[33.3%] rounded-md bg-slate-100 hover:shadow-2xl"
+          >
+            <!-- <img class="w-full h-full object-fit rounded-full"                     src="./Asset/profile2.jpg"
+
+                        alt="Abhishek"> -->
+            <img
+              class="object-fill h-28 w-28 rounded-full"
+              src="./Asset/profile2.jpg"
+              alt="shubham khatik"
+            />
+
+            <div class="flex flex-col">
+              <div class="flex flex-row items-center gap-2">
+                <p
+                  class="text-zinc-900group-hover:text-black group-hover:text-blue-600 text-lg lg:text-base font-bold cursor-pointer"
+                >
+                  Shubham
+                </p>
+                <p
+                  class="text-zinc-400 group-hover:text-zinc-500 group-hover:text-purple-800 text-base lg:text-sm font-semibold cursor-pointer"
+                >
+                  <a href="https://www.linkedin.com/in/abhishek-ray-0b83181b4/"
+                    >@SGK</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <p
+                  class="text-zinc-800 text-base text-lg md:text-xl lg:text-lg group-hover:text- font-normal cursor-pointer"
+                >
+                  The built-in markdown previewer is awesome and the plugin
+                  system allows me to use GitLens, which makes my workflow so
+                  much easier.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second carousel Div  -->
+          <div
+            class="group flex items-center gap-2 lg:items-start p-2 lg:m-0 lg:gap-0 lg:my-2 lg:w-[30%] rounded-md bg-slate-100 hover:shadow-2xl"
+          >
+            <img
+              class="object-fill h-28 w-28 rounded-full"
+              src="./Asset/profile2.jpg"
+              alt="Anurag Tiwari"
+            />
+
+            <div class="flex flex-col">
+              <div class="flex flex-row items-center gap-2">
+                <p
+                  class="text-zinc-900 group-hover:text-blue-600 text-lg lg:text-base font-bold cursor-pointer"
+                >
+                  Anurag Tiwari
+                </p>
+                <p
+                  class="text-zinc-400 group-hover:text-purple-800 text-base lg:text-sm font-semibold cursor-pointer"
+                >
+                  <a href="https://www.linkedin.com/in/anuragtiwarime/"
+                    >@anurag</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <p
+                  class="text-zinc-800 text-base text-lg md:text-xl lg:text-lg font-normal cursor-pointer"
+                >
+                  The built-in markdown previewer is awesome and the plugin
+                  system allows me to use GitLens, which makes my workflow so
+                  much easier.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third carousel Div  -->
+          <div
+            class="group flex items-center gap-2 lg:items-start p-2 lg:m-0 lg:gap-0 lg:my-2 lg:w-[33.3%] rounded-md bg-slate-100 hover:shadow-2xl"
+          >
+            <img
+              class="object-fill h-28 w-28 rounded-full"
+              src="./Asset/profile2.jpg"
+              alt="Hitesh Choudhary"
+            />
+
+            <div class="flex flex-col">
+              <div class="flex flex-row items-center gap-2">
+                <p
+                  class="text-zinc-900 text-lg lg:text-base font-bold cursor-pointer group-hover:text-pink-600"
+                >
+                  Hitesh Choudhary
+                </p>
+                <p
+                  class="text-zinc-400 group-hover:text-zinc-500 group-hover:text-pink-800 text-base lg:text-sm font-semibold cursor-pointer"
+                >
+                  <a href="https://www.instagram.com/hiteshchoudharyofficial/"
+                    >@hitesh</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <p
+                  class="text-zinc-800 text-base text-lg md:text-xl lg:text-lg font-normal cursor-pointer"
+                >
+                  The built-in markdown previewer is awesome and the plugin
+                  system allows me to use GitLens, which makes my workflow so
+                  much easier. 🔥🔥🔥.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--  Arrow Right -->
+          <div
+            class="text-zinc-500 hover:text-zinc-700 rounded-full hidden cursor-pointer hover:shadow-2xl text-6xl lg:absolute lg:-right-8 lg:flex lg:items-center"
+          >
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+        </section>
+      </section>
+      <!-- info one start -->
+      <section class="bg-white flex justify-center items-center z-10 px-3">
+        <section
+          class="flex flex-col gap-2 my-12 lg:flex-row justify-center lg:items-start w-full lg:w-3/4"
+        >
+          <div class="mx-auto hover:scale-x-110 hover:scale-y-110">
+            <img src="./Asset/intellisense.png" alt="" />
+          </div>
+
+          <div
+            class="flex flex-col gap-5 justify-between items-start lg:basis-3/5 lg:flex-col lg:justify-between lg:items-start"
+          >
+            <p class="mx-3 text-xl font-light text-zinc-700">
+              Meet IntelliSense.
+            </p>
+            <p
+              class="mx-3 text-base font-normal text-zinc-700 leading-5 md:leading-7 lg:leading-10"
+            >
+              Go beyond syntax highlighting and autocomplete with IntelliSense,
+              which provides smart completions based on variable types, function
+              definitions, and imported modules.
+            </p>
+          </div>
+        </section>
+      </section>
+      <!-- info two start -->
+      <section class="bg-white flex justify-center items-center z-10 px-3">
+        <section
+          class="flex flex-col gap-2 my-12 lg:flex-row justify-center lg:items-start w-full lg:w-3/4"
+        >
+          <div
+            class="flex flex-col gap-5 justify-between items-start lg:basis-3/5 lg:flex-col lg:justify-between lg:items-start"
+          >
+            <p class="mx-3 text-xl font-light text-zinc-700">
+              Print statement debugging is a thing of the past.
+            </p>
+            <p
+              class="mx-3 text-base font-normal text-zinc-700 leading-5 md:leading-7 lg:leading-10"
+            >
+              Go beyond Debug code right from the editor. Launch or attach to
+              your running apps and debug with break points, call stacks, and an
+              interactive console.
+            </p>
+          </div>
+          <div class="mx-auto hover:scale-x-110 hover:scale-y-110">
+            <img src="./Asset/debugging.png" alt="" />
+          </div>
+        </section>
+      </section>
+      <!-- info three start   -->
+      <section class="bg-white flex justify-center items-center z-10 px-3">
+        <section
+          class="flex flex-col gap-2 my-12 lg:flex-row justify-center lg:items-start w-full lg:w-3/4"
+        >
+          <div class="mx-auto hover:scale-x-110 hover:scale-y-110">
+            <img src="./Asset/git.png" alt="" />
+          </div>
+
+          <div
+            class="flex flex-col gap-5 justify-between items-start lg:basis-3/5 lg:flex-col lg:justify-between lg:items-start"
+          >
+            <p class="mx-3 text-xl font-light text-zinc-700">
+              Git commands built-in.
+            </p>
+            <p
+              class="mx-3 text-base font-normal text-zinc-700 leading-5 md:leading-7 lg:leading-10"
+            >
+              Go beyond Working with Git and other SCM providers has never been
+              easier. Review diffs, stage files, and make commits right from the
+              editor. Push and pull from any hosted SCM service.
+            </p>
+          </div>
+        </section>
+      </section>
+      <!-- info four start -->
+      <section class="bg-white flex justify-center items-center z-10 px-3">
+        <section
+          class="flex flex-col gap-2 my-12 lg:flex-row justify-center lg:items-start w-full lg:w-3/4"
+        >
+          <div
+            class="flex flex-col gap-5 justify-between items-start lg:basis-3/5 lg:flex-col lg:justify-between lg:items-start"
+          >
+            <p class="mx-3 text-xl font-light text-zinc-700">
+              Extensible and customizable.
+            </p>
+            <p
+              class="mx-3 text-base font-normal text-zinc-700 leading-5 md:leading-7 lg:leading-10"
+            >
+              Want even more features? Install extensions to add new languages,
+              themes, debuggers, and to connect to additional services.
+              Extensions run in separate processes, ensuring they won't slow
+              down your editor.
+              <a
+                href="./"
+                class="text-rose-600 font-normal hover:underline hover:text-cyan-400"
+                >Learn more about extensions.</a
+              >
+            </p>
+          </div>
+          <div class="mx-auto hover:scale-x-110 hover:scale-y-110">
+            <img src="./Asset/extension.png" alt="" />
+          </div>
+        </section>
+      </section>
+      <!-- info five start -->
+      <section class="bg-white flex justify-center items-center z-10 px-3">
+        <section
+          class="flex flex-col gap-2 my-12 lg:flex-row justify-center lg:items-start w-full lg:w-3/4"
+        >
+          <div class="mx-auto hover:scale-x-110 hover:scale-y-110">
+            <img src="./Asset/deploy.png" alt="" />
+          </div>
+
+          <div
+            class="flex flex-col gap-5 justify-between items-start lg:basis-3/5 lg:flex-col lg:justify-between lg:items-start"
+          >
+            <p class="mx-3 text-xl font-light text-zinc-700">
+              Deploy with confidence and ease
+            </p>
+            <p
+              class="mx-3 text-base font-normal text-zinc-700 leading-5 md:leading-7 lg:leading-10"
+            >
+              With
+              <a
+                href="./"
+                class="text-rose-600 font-normal hover:underline hover:text-cyan-400"
+                >Microsoft Azure</a
+              >
+
+              you can deploy and host your React, Angular, Vue, Node, Python
+              (and more!) sites, store and query relational and document based
+              data, and scale with serverless computing, all with ease,
+              <a
+                href="./"
+                class="text-rose-600 font-normal hover:underline hover:text-cyan-400"
+              >
+                all from within VS Code.</a
+              >
+            </p>
+          </div>
+        </section>
       </section>
     </main>
   </body>
