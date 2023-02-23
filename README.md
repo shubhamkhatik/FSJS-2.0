@@ -7,5 +7,7 @@
 [check readme file](./HTML%20and%20CSS/README.md)
 ## _**Tailwind CSS Project**_
 [check readme file](./Tailwind%20Project/README.md)
+## _**JS Assignment**_
+[check readme file](./JS%20Assignment/)
 ## _**JS DOM**_
 [check readme file](./JS%20DOM/onclick_colordots/README.md)
